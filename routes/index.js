@@ -6,7 +6,8 @@ router.get('/', function(req, res) {
   res.render('index', {
       page: {title: "nateschulz.com"},
       body: {id: "page_home", cssClasses: "p_home"},
-      title: 'nateschulz.com' });
+      title: 'page heading'
+  });
 });
 
 module.exports = router;

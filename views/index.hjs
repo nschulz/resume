@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-<body>
     <head>
         <title>{{page.title}}</title>
     </head>
-<body id="{{body.id}}" class="{{body.cssClasses}}">
-    <h1>{{title}}</h1>
-    <p>{{contentBody}}</p>
-</body>
+    <body id="{{body.id}}" class="{{body.cssClasses}}">
+        <h1>{{title}}</h1>
+        <p>{{contentBody}}</p>
+    </body>
 </html>
