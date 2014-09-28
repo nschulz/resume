@@ -1,0 +1,17 @@
+<header>
+    <div class="hero-container">
+        <div class="hero-image"></div>
+        <span class="hero-title">Nate Schulz</span>
+    </div>
+    <nav>
+        <span class="nav-group local">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+        </span>
+        <span class="nav-group social">
+            <a href="http://plus.google.com/+nateschulz">+NateSchulz</a>
+            <a href="http://twitter.com/nschulz">@nschulz</a>
+            <a href="http://linkedin.com/in/nschulz">LinkedIn</a>
+        </span>
+    </nav>
+</header>

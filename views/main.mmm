@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{page.title}}</title>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta name="viewport" content="width=1024; user-scalable=0;">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="robots" content="all" />
+        <meta property="fb:admins" content="17207270" />
+        <meta name="description" content="Portfolio of Nate Schulz - Irvine, California." />
+        <meta name="keywords" content="Nate Schulz, nate, schulz, schultz, shultz, Freelance, designer, web, development, video, production, portfolio, digital media, UX Deisgner, user experience" />
+        {{#page.meta}}
+
+        {{/page.meta}}
+            <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Titillium+Web|Francois+One|Maven+Pro' rel='stylesheet' type='text/css'>        <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="all" title="Default" charset="utf-8"/>
+        {{#page.styles}}
+
+        {{/page.styles}}
+    </head>
+    <body id="{{body.id}}" class="{{body.cssClasses}}">
+        {{> partials/header}}
+        {{> partials/standardContent}}
+        {{> partials/footer}}
+        {{#page.scripts}}
+            <script async=async type="text/javascript" src="{{.}}"/>
+        {{/page.scripts}}
+    </body>
+</html>
