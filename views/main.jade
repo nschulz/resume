@@ -1,0 +1,8 @@
+extends layout
+
+include partials/section
+
+block content
+    if sections
+        each section in sections
+            mixin section(section)

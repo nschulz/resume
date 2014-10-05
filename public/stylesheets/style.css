@@ -1,6 +1,6 @@
 body {
     font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Source Sans Pro', "Lucida Grande", Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
     background-color: #cdcdcd;
@@ -68,6 +68,7 @@ header {
 }
 .hero-title {
     color: #fff;
+    font-family: 'Maven Pro';
     text-shadow: 0 1px 3px rgba(0,0,0,0.65);
     text-align: center;
     display: block;

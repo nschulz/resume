@@ -1,0 +1,30 @@
+mixin section(model, subsection)
+    - var sectionClass = model.title.replace(/\s/g, "-").toLowerCase();
+    if subsection
+        div(class="subsection")
+            if model.title
+                h4= model.title
+            if model.subtitle
+                h5= model.subtitle
+            if model.body
+                p=  model.body
+            if model.sections
+                each subsectionModel in model.sections
+                    mixin section(subsectionModel)
+            if model.subsections
+                each subsectionModel in model.subsections
+                    mixin section(subsectionModel, true)
+    else
+        section(class=sectionClass)
+            if model.title
+                h2= model.title
+            if model.subtitle
+                h3= model.subtitle
+            if model.body
+                p=  model.body
+            if model.sections
+                each subsectionModel in model.sections
+                    mixin section(subsectionModel)
+            if model.subsections
+                each subsectionModel in model.subsections
+                    mixin section(subsectionModel, true)

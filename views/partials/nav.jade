@@ -1,0 +1,5 @@
+nav
+    each linkGroup in global_nav
+        span(class="nav-group #{linkGroup.title.toLowerCase()}")
+            each link in linkGroup.items
+                a(href="#{link.href}")= link.caption
