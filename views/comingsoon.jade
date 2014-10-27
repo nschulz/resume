@@ -1,0 +1,17 @@
+doctype
+html
+    head
+        title= page_title
+        link(rel='stylesheet', href='/stylesheets/comingsoon.css' type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300', rel='stylesheet' type='text/css')
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="keywords", content="#{seo.keywords}")
+        body
+            article(class="article")
+                section(class="main-feature")
+                    h1(class="callout-span")=comingsoon.title
+                        span=comingsoon.title2
+                    h2=comingsoon.subtitle
+                    nav(class="coming-soon-nav")
+                        each link in comingsoon.links
+                            a(href="#{link.href}")= link.caption
